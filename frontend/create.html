@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Create Post</title>
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body class="gradient">
+
+  <nav>
+    <span>SocialApp</span>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="create.html">Create</a>
+      <a href="profile.html">Profile</a>
+      <a href="#" onclick="logout()">Logout</a>
+    </div>
+  </nav>
+
+  <div class="card">
+    <h2>Create Post</h2>
+    <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+    <button onclick="createPost()">Post</button>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/post.js"></script>
+</body>
+
+</html>

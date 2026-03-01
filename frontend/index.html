@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SocialApp - Login</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body class="gradient">
+
+    <div class="auth-container">
+        <div class="auth-card card" id="login-section">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Sign In</button>
+            <p>Don't have an account? <a href="#" onclick="toggleAuth('register')">Register</a></p>
+        </div>
+
+        <div class="auth-card card" id="register-section" style="display: none;">
+            <h2>Register</h2>
+            <input type="email" id="reg-email" placeholder="Email">
+            <input type="text" id="reg-name" placeholder="Full Name">
+            <input type="text" id="reg-username" placeholder="Username">
+            <input type="password" id="reg-password" placeholder="Password">
+            <button onclick="register()">Create Account</button>
+            <p>Already have an account? <a href="#" onclick="toggleAuth('login')">Login</a></p>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.profile-card {
+  text-align: center;
+}
+
+.profile-card h2 {
+  margin-top: 0;
+  background: linear-gradient(to right, var(--secondary), var(--tertiary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+.profile-card p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
